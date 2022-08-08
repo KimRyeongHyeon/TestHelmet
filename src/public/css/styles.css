@@ -1,21 +1,21 @@
 /* Config */
-@import url('TestHelmet/src/public/css/config/_reset.css');
-@import url('TestHelmet/src/public/css/config/_variables.css');
+@import url('/TestHelmet/src/public/css/config/_reset.css');
+@import url('/TestHelmet/src/public/css/config/_variables.css');
 
 /* Components */
-@import url('TestHelmet/src/public/css/components/header.css');
-@import url('TestHelmet/src/public/css/components/footer.css');
-@import url('TestHelmet/src/public/css/components/button.css');
-@import url('TestHelmet/src/public/css/components/select.css');
-@import url('TestHelmet/src/public/css/components/checkbox.css');
-@import url('TestHelmet/src/public/css/components/submit.css');
-@import url('TestHelmet/src/public/css/components/room-list.css');
-@import url('TestHelmet/src/public/css/components/video.css');
-@import url('TestHelmet/src/public/css/components/chat.css');
+@import url('/TestHelmet/src/public/css/components/header.css');
+@import url('/TestHelmet/src/public/css/components/footer.css');
+@import url('/TestHelmet/src/public/css/components/button.css');
+@import url('/TestHelmet/src/public/css/components/select.css');
+@import url('/TestHelmet/src/public/css/components/checkbox.css');
+@import url('/TestHelmet/src/public/css/components/submit.css');
+@import url('/TestHelmet/src/public/css/components/room-list.css');
+@import url('/TestHelmet/src/public/css/components/video.css');
+@import url('/TestHelmet/src/public/css/components/chat.css');
 
 /* Screens */
-@import url('TestHelmet/src/public/css/screens/home.css');
-@import url('TestHelmet/src/public/css/screens/call.css');
+@import url('/TestHelmet/src/public/css/screens/home.css');
+@import url('/TestHelmet/src/public/css/screens/call.css');
 
 * {
   box-sizing: border-box;

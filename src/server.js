@@ -11,7 +11,7 @@ const app = express();
 app.engine('html', cons.swig)
 app.set('view engine', 'html')
 app.set('views', process.cwd() + '/src/views');
-app.use('/public', process.cwd() + '/src/public');
+app.use('public', process.cwd() + '/src/public');
 app.get('/', (req, res) => res.render('index'));
 app.get('/*', (req, res) => res.redirect('/'));
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/public/css/styles.css">
+        
+        <title>SSCC | Video Call & Chat Service</title>
+        
+        <link rel="shortcut icon" type="image/x-icon" href="/public/images/favicon.ico">
+    </head>
+<body>
+    <div id="footer-fixer">
+        <header>
+            <a id="logo" href="">
+                <i class="fa-solid fa-video fa-lg"></i>
+                <label for="logo">See See Call Call</label>
+            </a>
+        </header>
+        <main></main>
+        <div class="home" id="home">
+            <div class="submit">
+                <div class="submit__user" id="saveNickname">
+                    <form><input class="submit__text" id="nickname" placeholder="nickname" required type="text" maxlength="12"><div class="submit__device">
+                            <div class="submit__mike"><input id="mikeOff" type="checkbox"><label for="mikeOff"></label>
+                                <label for="mikeOff">Mike Off</label>
+                            </div>
+                            <div class="submit__camera"><input id="cameraOff" type="checkbox"><label for="cameraOff"></label>
+                                <label for="cameraOff">Camera Off</label>
+                            </div>
+                        </div>
+                        <button>Save</button>
+                    </form>
+                </div>
+                <div class="submit__room" id="enterRoom">
+                    <span class="submit__greeting">Please save your nickname first.
+                    </span>
+                    <form>
+                        <input class="submit__text" id="roomName" placeholder="room name" required type="text" maxlength="20"><button disabled>Enter Room</button>
+                    </form>
+                </div>
+            </div>
+            <div class="room-list">
+                <span>Open Rooms</span>
+                <ul id="roomList"></ul>
+            </div>
+        </div>
+        <div class="call" id="call">
+            <div class="call__header" id="callHeader">
+                <div class="call__room-name">
+                    <i class="fa-solid fa-video fa-lg"></i>
+                    <span></span>
+                </div>
+                <div class="call__room-description">
+                    <span></span>
+                </div>
+                <form class="call__close" action="">
+                    <button>Close</button>
+                </form>
+            </div>
+            <div class="call__main">
+                <div class="video">
+                    <video class="video__peer-video" id="peerFace" autoplay playsinline width="480" height="270" poster="/public/images/call.png">
+                        <span class="video__peer-name"></span>
+                    </video>
+                    <video class="video__my-video" id="myFace" autoplay playsinline width="480" height="270" muted poster="/public/images/call.png">
+                        <span class="video__my-name"></span>
+                    </video>
+                </div>
+                <div class="device-chat">
+                    <div class="video__device" id="device">
+                        <div class="video__mike">
+                            <select id="mikes"></select>
+                            <button id="muteBtn">Mute</button>
+                        </div>
+                        <div class="video__camera">
+                            <select id="cameras"></select>
+                            <button id="cameraBtn">Cam Off</button>
+                        </div>
+                    </div>
+                    <div class="chat" id="chat">
+                        <ul class="chat__text"></ul>
+                        <div class="send__wrapper">
+                            <form class="chat__send" id="message">
+                                <textarea placeholder="message" required></textarea>
+                                <button>Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="toggle-chat">
+                <i class="fa-regular fa-comment"></i>
+            </button>
+            <button class="toggle-device">
+                <i class="fa-solid fa-camera"></i>
+            </button>
+            <button class="toggle-header">
+                <i class="fa-solid fa-door-open"></i>
+            </button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/app.js"></script>
+</body>
+</body>
+</html>

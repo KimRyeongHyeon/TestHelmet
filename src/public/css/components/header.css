@@ -1,0 +1,18 @@
+header {
+  font-size: var(--font-header);
+  padding: var(--space-default);
+  border-bottom: var(--border-default);
+  background-color: var(--white-color);
+}
+
+header a {
+  color: var(--blue-color);
+}
+
+header a i {
+  margin-right: var(--space-default);
+}
+
+header label {
+  cursor: pointer;
+}

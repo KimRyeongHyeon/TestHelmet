@@ -1,21 +1,21 @@
 /* Config */
-@import url('/public/css/config/_reset.css');
-@import url('/public/css/config/_variables.css');
+@import url('/src/public/css/config/_reset.css');
+@import url('/src/public/css/config/_variables.css');
 
 /* Components */
-@import url('/public/css/components/header.css');
-@import url('/public/css/components/footer.css');
-@import url('/public/css/components/button.css');
-@import url('/public/css/components/select.css');
-@import url('/public/css/components/checkbox.css');
-@import url('/public/css/components/submit.css');
-@import url('/public/css/components/room-list.css');
-@import url('/public/css/components/video.css');
-@import url('/public/css/components/chat.css');
+@import url('/src/public/css/components/header.css');
+@import url('/src/public/css/components/footer.css');
+@import url('/src/public/css/components/button.css');
+@import url('/src/public/css/components/select.css');
+@import url('/src/public/css/components/checkbox.css');
+@import url('/src/public/css/components/submit.css');
+@import url('/src/public/css/components/room-list.css');
+@import url('/src/public/css/components/video.css');
+@import url('/src/public/css/components/chat.css');
 
 /* Screens */
-@import url('/public/css/screens/home.css');
-@import url('/public/css/screens/call.css');
+@import url('/src/public/css/screens/home.css');
+@import url('/src/public/css/screens/call.css');
 
 * {
   box-sizing: border-box;

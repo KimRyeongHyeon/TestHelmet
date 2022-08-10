@@ -1,4 +1,4 @@
-const socket = io('/');
+var socket = io('/');
 
 // Sections
 const header = document.querySelector('header');

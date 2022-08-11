@@ -3,16 +3,12 @@ import { Server } from 'socket.io';
 import { instrument } from '@socket.io/admin-ui';
 import express from 'express';
 
-var cons = require('consolidate');
-
 // App router
 const app = express();
-//app.set('view engine', 'pug');
-app.engine('html', cons.swig)
-app.set('view engine', 'html')
+app.set('view engine', 'pug');
 app.set('views', process.cwd() + '/src/views');
 app.use('/public', express.static(process.cwd() + '/src/public'));
-app.get('/', (req, res) => res.render('index'));
+app.get('/', (req, res) => res.render('home'));
 app.get('/*', (req, res) => res.redirect('/'));
 
 // Port
